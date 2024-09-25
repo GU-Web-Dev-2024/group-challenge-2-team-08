@@ -14,10 +14,11 @@ Text Input: Cooking instructions
 File Upload: Image of the recipe
 Submit Button -->
 <h1>Submit Your Recipe</h1>
-<form>
+<form id="whole">
     <div id="recipeName">
         <label for="recipeName">Recipe Name</label><br>
         <input type="text" id="recipeName" name="recipeName"><br>
+
     </div>
     <div id="recipeDescription"> 
         <label for="recipeDescription">Recipe Description</label><br>
@@ -44,39 +45,42 @@ Submit Button -->
 </form>
 
 <style>
+    #whole {
+        padding: 5px;
+        border: 1px black solid;
+    }
     #recipeName {
         display: flex;
-        border: 1px black solid;
         padding: 5px;
         gap: 20px;
     }
+
     #recipeDescription {
         display: flex;
-        border: 1px black solid;
         padding: 5px;
         gap: 20px;
     }
+
     #prepTime {
         display: flex;
-        border: 1px black solid;
         padding: 5px;
         gap: 20px;
     }
+
     #listIngred {
         display: flex;
-        border: 1px black solid;
+    
         padding: 5px;
         gap: 20px;
     }
     #cookInstr {
         display: flex;
-        border: 1px black solid;
+
         padding: 5px;
         gap: 20px;
     }
     #recipeImage {
         display: flex;
-        border: 1px black solid;
         padding: 5px;
         gap: 20px;
     }
