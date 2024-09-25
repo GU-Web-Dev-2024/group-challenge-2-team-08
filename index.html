@@ -13,23 +13,38 @@ Text Input: List of ingredients
 Text Input: Cooking instructions
 File Upload: Image of the recipe
 Submit Button -->
+<<<<<<< HEAD
 <form action="/action_page.php" id = "grid-container">
+=======
+<h1>Submit Your Recipe</h1>
+<form id="whole">
+    <div id="recipeName">
+        <label for="recipeName">Recipe Name</label><br>
+        <input type="text" id="recipeName" name="recipeName"><br>
+
+    </div>
+>>>>>>> 4fa3e031ecaf7fd5928b75bcd4492c9e9eebbd10
     <div id="recipeDescription"> 
         <label for="recipeDescription">Recipe Description</label><br>
         <input type="text" id="recipeDescription" name="recipeDescription"><br>
     </div>
-
     <div id="prepTime">
             <label for="prepTime">Preparation time (in minutes)</label><br>
             <input type="text" id="prepTime" name="prepTime"><br>
     </div>
-    <div id="listIngred"></div>
+    <div id="listIngred">
         <label for="listIngred">List of Ingredients</label><br>
         <input type="listIngred" id="listIngred" name="listIngred"><br>
     </div>
+<<<<<<< HEAD
     <div id="listIngred">
         <label for="listIngred">Cooking Instructions</label><br>
         <input type="text" id="cookIntruc" name="cookIntruc" maxlength="4" size="4"><br>
+=======
+    <div id="cookInstr">
+        <label for="cookInstr">Cooking Instructions</label><br>
+        <input type="text" id="cookIntruc" name="cookIntruc"><br>
+>>>>>>> 4fa3e031ecaf7fd5928b75bcd4492c9e9eebbd10
     </div>
     <div id="recipeImage">
         <input type = "file" id = "myFile" name="filename">
@@ -38,6 +53,50 @@ Submit Button -->
         <input type="button" value="submit">
     </div>
 </form>
+
+<style>
+    #whole {
+        padding: 5px;
+        border: 1px black solid;
+    }
+    #recipeName {
+        display: flex;
+        padding: 5px;
+        gap: 20px;
+    }
+
+    #recipeDescription {
+        display: flex;
+        padding: 5px;
+        gap: 20px;
+    }
+
+    #prepTime {
+        display: flex;
+        padding: 5px;
+        gap: 20px;
+    }
+
+    #listIngred {
+        display: flex;
+    
+        padding: 5px;
+        gap: 20px;
+    }
+    #cookInstr {
+        display: flex;
+
+        padding: 5px;
+        gap: 20px;
+    }
+    #recipeImage {
+        display: flex;
+        padding: 5px;
+        gap: 20px;
+    }
+
+</style>
+
     
 <style> 
     #grid-container {
