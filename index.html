@@ -13,22 +13,26 @@ Text Input: List of ingredients
 Text Input: Cooking instructions
 File Upload: Image of the recipe
 Submit Button -->
+<h1>Submit Your Recipe</h1>
 <form>
+    <div id="recipeName">
+        <label for="recipeName">Recipe Name</label><br>
+        <input type="text" id="recipeName" name="recipeName"><br>
+    </div>
     <div id="recipeDescription"> 
         <label for="recipeDescription">Recipe Description</label><br>
         <input type="text" id="recipeDescription" name="recipeDescription"><br>
     </div>
-
     <div id="prepTime">
             <label for="prepTime">Preparation time (in minutes)</label><br>
             <input type="text" id="prepTime" name="prepTime"><br>
     </div>
-    <div id="listIngred"></div>
+    <div id="listIngred">
         <label for="listIngred">List of Ingredients</label><br>
         <input type="listIngred" id="listIngred" name="listIngred"><br>
     </div>
-    <div id="listIngred">
-        <label for="listIngred">Cooking Instructions</label><br>
+    <div id="cookInstr">
+        <label for="cookInstr">Cooking Instructions</label><br>
         <input type="text" id="cookIntruc" name="cookIntruc"><br>
     </div>
     <div id="recipeImage">
@@ -38,6 +42,47 @@ Submit Button -->
         <input type="button" value="submit">
     </div>
 </form>
+
+<style>
+    #recipeName {
+        display: flex;
+        border: 1px black solid;
+        padding: 5px;
+        gap: 20px;
+    }
+    #recipeDescription {
+        display: flex;
+        border: 1px black solid;
+        padding: 5px;
+        gap: 20px;
+    }
+    #prepTime {
+        display: flex;
+        border: 1px black solid;
+        padding: 5px;
+        gap: 20px;
+    }
+    #listIngred {
+        display: flex;
+        border: 1px black solid;
+        padding: 5px;
+        gap: 20px;
+    }
+    #cookInstr {
+        display: flex;
+        border: 1px black solid;
+        padding: 5px;
+        gap: 20px;
+    }
+    #recipeImage {
+        display: flex;
+        border: 1px black solid;
+        padding: 5px;
+        gap: 20px;
+    }
+
+</style>
+
     
 
 
