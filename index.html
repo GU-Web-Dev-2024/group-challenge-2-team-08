@@ -13,7 +13,7 @@ Text Input: List of ingredients
 Text Input: Cooking instructions
 File Upload: Image of the recipe
 Submit Button -->
-<form>
+<form action="/action_page.php" id = "grid-container">
     <div id="recipeDescription"> 
         <label for="recipeDescription">Recipe Description</label><br>
         <input type="text" id="recipeDescription" name="recipeDescription"><br>
@@ -29,17 +29,30 @@ Submit Button -->
     </div>
     <div id="listIngred">
         <label for="listIngred">Cooking Instructions</label><br>
-        <input type="text" id="cookIntruc" name="cookIntruc"><br>
+        <input type="text" id="cookIntruc" name="cookIntruc" maxlength="4" size="4"><br>
     </div>
     <div id="recipeImage">
-        <p>add image here!</p>
+        <input type = "file" id = "myFile" name="filename">
     </div>
     <div>
         <input type="button" value="submit">
     </div>
 </form>
     
+<style> 
+    #grid-container {
+   display: grid;
+   /* grid-template-columns: auto auto auto; */
+    }
 
+    #grid-container {
+    text-align: center;
+    padding: 6px;
+    
+    }
+    
+    
+</style>
 
 </head>
 <body>
